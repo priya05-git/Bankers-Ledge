@@ -1,4 +1,4 @@
-# Banking Ledger
+# *Banking Ledger*
 
 [![tests](../../actions/workflows/tests.yml/badge.svg)](../../actions/workflows/tests.yml)
 
@@ -16,7 +16,7 @@ JSON/CSV persistence and a pytest suite with 100% coverage**.
 - Persistence to **JSON** (single file, atomic write) and **CSV** (`accounts.csv` + `transactions.csv`)
 - Integrity checks on load: tampered or inconsistent balances are rejected
 
-## Project layout
+## *Project layout*
 
 ```
 src/ledger/
