@@ -61,7 +61,7 @@ classDiagram
 | **Inheritance** | `PremiumCheckingAccount` → `CheckingAccount` → `Account`, reusing deposit/withdraw/serialisation. |
 | **Polymorphism** | `withdraw()` is a template method using each subclass's `available_funds` (min-balance vs. overdraft). `Bank.apply_monthly_updates()` calls the same method on every account; savings earn interest, checking pays fees. `JSONStorage`/`CSVStorage` are interchangeable. |
 
-## Custom exceptions
+## *Custom exceptions*
 
 ```
 LedgerError
@@ -89,7 +89,7 @@ python demo.py                                       # see it run
 pytest --cov=ledger --cov-report=term-missing        # run tests + coverage
 ```
 
-### Usage
+### *Usage*
 
 ```python
 from ledger import Bank, InsufficientFundsError, get_storage
